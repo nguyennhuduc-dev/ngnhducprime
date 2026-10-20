@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>20/10 | Tặng Mẹ Yêu 💗</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;800&family=Dancing+Script:wght@500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <section id="intro">
+        <div class="intro-stars"></div>
+
+        <div class="intro-content">
+            <div class="intro-icon">
+                <i class="fa-solid fa-gift"></i>
+            </div>
+
+            <p class="intro-small">MỘT MÓN QUÀ NHỎ DÀNH TẶNG MẸ</p>
+
+            <h1>20<span>/</span>10</h1>
+
+            <h2>Ngày Phụ Nữ Việt Nam</h2>
+
+            <p class="intro-text">
+                Một chút yêu thương,<br>
+                một chút ngọt ngào con gửi riêng đến mẹ 💗
+            </p>
+
+            <button id="startBtn" class="main-button" type="button">
+                <i class="fa-solid fa-gift"></i>
+                Mở món quà dành tặng mẹ
+            </button>
+
+            <div class="scroll-hint">
+                <i class="fa-solid fa-chevron-down"></i>
+            </div>
+        </div>
+    </section>
+
+    <canvas id="fireworks"></canvas>
+    <div id="petals"></div>
+    <div id="sparkles"></div>
+
+    <header id="header">
+        <div class="logo">
+            <i class="fa-solid fa-heart"></i>
+            <span>20/10</span>
+        </div>
+
+        <nav>
+            <a href="#home" class="active">
+                <i class="fa-solid fa-house"></i>
+                <span>Trang chủ</span>
+            </a>
+
+            <a href="#wish">
+                <i class="fa-solid fa-envelope"></i>
+                <span>Lời chúc</span>
+            </a>
+
+            <a href="#flowers">
+                <i class="fa-solid fa-spa"></i>
+                <span>Hoa</span>
+            </a>
+
+            <a href="#memory">
+                <i class="fa-solid fa-image"></i>
+                <span>Kỷ niệm</span>
+            </a>
+        </nav>
+
+        <button id="musicBtn" class="music-button" type="button">
+            <i class="fa-solid fa-volume-xmark"></i>
+        </button>
+    </header>
+
+    <div class="side-decoration left">
+        <span>♥</span>
+        <span>✦</span>
+        <span>♡</span>
+    </div>
+
+    <div class="side-decoration right">
+        <span>♡</span>
+        <span>✦</span>
+        <span>♥</span>
+    </div>
+
+    <main>
+
+        <section id="home" class="hero section">
+            <div class="hero-bg-circle circle-1"></div>
+            <div class="hero-bg-circle circle-2"></div>
+
+            <div class="hero-content">
+                <div class="hero-label">
+                    <span></span>
+                    GỬI TẶNG MẸ
+                    <span></span>
+                </div>
+
+                <h1>
+                    Gửi đến
+                    <span>người mẹ tuyệt vời</span>
+                    nhất của con 💗
+                </h1>
+
+                <p class="hero-description">
+                    Cảm ơn mẹ vì đã luôn yêu thương,
+                    chăm sóc và đồng hành cùng con trên mọi chặng đường.
+                </p>
+
+                <div class="hero-buttons">
+                    <button class="primary-button" id="wishBtn">
+                        <i class="fa-solid fa-heart"></i>
+                        Nhận lời chúc
+                    </button>
+
+                    <button class="secondary-button" id="exploreBtn">
+                        Khám phá
+                        <i class="fa-solid fa-arrow-down"></i>
+                    </button>
+                </div>
+            </div>
+
+            <div class="hero-visual">
+                <div class="glow"></div>
+
+                <div class="flower-bouquet">
+
+                    <div class="real-flower flower-one">
+                        <span class="flower-petal fp1"></span>
+                        <span class="flower-petal fp2"></span>
+                        <span class="flower-petal fp3"></span>
+                        <span class="flower-petal fp4"></span>
+                        <span class="flower-petal fp5"></span>
+                        <span class="flower-center"></span>
+                    </div>
+
+                    <div class="real-flower flower-two">
+                        <span class="flower-petal fp1"></span>
+                        <span class="flower-petal fp2"></span>
+                        <span class="flower-petal fp3"></span>
+                        <span class="flower-petal fp4"></span>
+                        <span class="flower-petal fp5"></span>
+                        <span class="flower-center"></span>
+                    </div>
+
+                    <div class="real-flower flower-three">
+                        <span class="flower-petal fp1"></span>
+                        <span class="flower-petal fp2"></span>
+                        <span class="flower-petal fp3"></span>
+                        <span class="flower-petal fp4"></span>
+                        <span class="flower-petal fp5"></span>
+                        <span class="flower-center"></span>
+                    </div>
+
+                    <span class="leaf leaf-one"></span>
+                    <span class="leaf leaf-two"></span>
+                    <span class="leaf leaf-three"></span>
+                </div>
+
+                <div class="floating-heart heart-one">♥</div>
+                <div class="floating-heart heart-two">♥</div>
+                <div class="floating-heart heart-three">♥</div>
+            </div>
+        </section>
+
+        <section id="wish" class="section wish-section">
+
+            <div class="section-heading">
+                <span class="section-number">01</span>
+
+                <div>
+                    <p>FROM MY HEART</p>
+
+                    <h2>
+                        Một lời chúc
+                        <span>dành riêng cho mẹ</span>
+                    </h2>
+                </div>
+            </div>
+
+            <div class="wish-container">
+
+                <div class="wish-card">
+                    <div class="card-decoration top-left">✿</div>
+                    <div class="card-decoration bottom-right">✿</div>
+
+                    <div class="wish-icon">
+                        <i class="fa-solid fa-heart"></i>
+                    </div>
+
+                    <p class="wish-date">20 . 10 . 2026</p>
+
+                    <h3>Tặng mẹ yêu 💗</h3>
+
+                    <div class="typing-area">
+                        <p id="typingText"></p>
+                        <span class="cursor">|</span>
+                    </div>
+
+                    <div class="card-signature">
+                        With lots of love 💗
+                    </div>
+                </div>
+
+                <div class="wish-side">
+
+                    <div class="quote">
+                        <i class="fa-solid fa-quote-left"></i>
+
+                        <p>
+                            "Mẹ giống như đóa hoa đẹp nhất.
+                            Mẹ mang đến cho gia đình
+                            sự yêu thương và bình yên."
+                        </p>
+
+                        <span>— Từ con gửi đến mẹ</span>
+                    </div>
+
+                    <button class="surprise-button" id="surpriseBtn">
+                        <span>🎁</span>
+                        Bật mí điều bất ngờ
+                    </button>
+
+                </div>
+            </div>
+        </section>
+
+        <section id="flowers" class="section flowers-section">
+
+            <div class="section-heading center">
+                <span class="section-number">02</span>
+
+                <div>
+                    <p>A LITTLE FLOWER</p>
+
+                    <h2>
+                        Những đóa hoa
+                        <span>tặng riêng cho mẹ</span>
+                    </h2>
+                </div>
+            </div>
+
+            <div class="flower-grid">
+
+                <article class="flower-card">
+                    <div class="flower-card-image">🌹</div>
+
+                    <div class="flower-card-content">
+                        <h3>Hoa Hồng</h3>
+                        <p>
+                            Đại diện cho tình yêu và lòng biết ơn
+                            mà con dành cho mẹ.
+                        </p>
+                    </div>
+                </article>
+
+                <article class="flower-card">
+                    <div class="flower-card-image">🌷</div>
+
+                    <div class="flower-card-content">
+                        <h3>Hoa Tulip</h3>
+                        <p>
+                            Gửi đến mẹ những điều dịu dàng,
+                            ấm áp và hạnh phúc nhất.
+                        </p>
+                    </div>
+                </article>
+
+                <article class="flower-card">
+                    <div class="flower-card-image">🌻</div>
+
+                    <div class="flower-card-content">
+                        <h3>Hoa Hướng Dương</h3>
+                        <p>
+                            Mong mẹ luôn vui vẻ và luôn có
+                            thật nhiều ánh sáng trong cuộc sống.
+                        </p>
+                    </div>
+                </article>
+
+                <article class="flower-card">
+                    <div class="flower-card-image">🌸</div>
+
+                    <div class="flower-card-content">
+                        <h3>Hoa Anh Đào</h3>
+                        <p>
+                            Một lời chúc bình an và những
+                            ngày tháng thật đẹp dành cho mẹ.
+                        </p>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+
+        <section id="memory" class="section memory-section">
+
+            <div class="section-heading">
+                <span class="section-number">03</span>
+
+                <div>
+                    <p>SWEET MOMENTS</p>
+
+                    <h2>
+                        Những điều
+                        <span>con biết ơn về mẹ</span>
+                    </h2>
+                </div>
+            </div>
+
+            <div class="memory-grid">
+
+                <div class="memory-item large">
+                    <div class="memory-icon">✨</div>
+
+                    <h3>Mẹ luôn tỏa sáng</h3>
+
+                    <p>
+                        Trong mắt con, mẹ luôn là người
+                        tuyệt vời và đáng quý nhất.
+                    </p>
+                </div>
+
+                <div class="memory-item">
+                    <div class="memory-icon">🌷</div>
+
+                    <h3>Mẹ luôn tuyệt vời</h3>
+
+                    <p>
+                        Vẻ đẹp của mẹ nằm trong
+                        một trái tim luôn yêu thương con.
+                    </p>
+                </div>
+
+                <div class="memory-item">
+                    <div class="memory-icon">💫</div>
+
+                    <h3>Mẹ luôn hạnh phúc</h3>
+
+                    <p>
+                        Mong những điều tốt đẹp
+                        luôn tìm đến mẹ mỗi ngày.
+                    </p>
+                </div>
+
+                <div class="memory-item">
+                    <div class="memory-icon">💗</div>
+
+                    <h3>Mẹ luôn được yêu thương</h3>
+
+                    <p>
+                        Mẹ xứng đáng với thật nhiều
+                        yêu thương và trân trọng.
+                    </p>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="final-section">
+
+            <div class="final-glow"></div>
+
+            <div class="final-content">
+                <div class="final-heart">💗</div>
+
+                <p class="final-small">
+                    ONE LAST MESSAGE FOR MOM
+                </p>
+
+                <h2>
+                    Chúc mẹ một ngày
+                    <span>20/10 thật hạnh phúc!</span>
+                </h2>
+
+                <p>
+                    Cảm ơn mẹ vì đã luôn yêu thương,
+                    chăm sóc và là người luôn ở bên con.
+                </p>
+
+                <button class="firework-button" id="fireworkBtn">
+                    <i class="fa-solid fa-wand-magic-sparkles"></i>
+                    Tạo pháo hoa
+                </button>
+            </div>
+        </section>
+
+    </main>
+
+    <div id="popup" class="popup">
+
+        <div class="popup-overlay" id="popupOverlay"></div>
+
+        <div class="popup-box">
+
+            <button class="close-popup" id="closePopup">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+
+            <div class="popup-icon">💌</div>
+
+            <p class="popup-label">
+                A SPECIAL MESSAGE
+            </p>
+
+            <h2 id="popupTitle">
+                Gửi mẹ 💗
+            </h2>
+
+            <p id="popupText">
+                Chúc mẹ luôn vui vẻ,
+                luôn mạnh khỏe và luôn gặp thật nhiều
+                điều tốt đẹp trong cuộc sống.
+            </p>
+
+            <div class="popup-hearts">
+                ♥ ♥ ♥
+            </div>
+
+        </div>
+    </div>
+
+    <audio id="bgMusic" loop preload="auto">
+        <source src="music.mp3" type="audio/mpeg">
+    </audio>
+
+    <footer>
+        <div class="footer-heart">♥</div>
+
+        <p>
+            Made with <span>❤</span> for Mom
+        </p>
+
+        <small>
+            Một món quà nhỏ dành tặng mẹ nhân ngày 20/10.
+        </small>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
